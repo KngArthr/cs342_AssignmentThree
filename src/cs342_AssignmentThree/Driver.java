@@ -1,6 +1,45 @@
 package cs342_AssignmentThree;
 
+//---------------------------------------------------------------------------
+//
+//Homework Assignment #2
+//1) Use recursion to make an ascending and descending Asterisk pattern
+//2) Use recursion to take apart an integer and convert it to a string
+//
+//Author: Mujahid Kazi
+//Date: 02/10/2020
+//Class: MET CS342
+//Issues: None known
+//
+//Description:
+//This program will build a linked list of 10 Strings and 
+//then a doubley linked list of 10 strings. The program
+//will display the lists and delete the last element in
+//the list.
+//
+//Assumptions:
+//The linked list will be filled with 10 strings.
+//
+
+
+//
+//Class: Driver
+//
+//Description:
+//This class uses methods from other classes to put the program together.
+//It is the driver of this program.
+//
+
 public class Driver {
+	
+///////////////////////////////////////////////////////////////////
+/// main ///
+/// Input : String[] args ///
+/// Output: None///
+/// Runs the program. Key methods are placed in to the main method to run the program.
+/// Will print results into the console.
+/// ///
+///////////////////////////////////////////////////////////////////
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -11,17 +50,23 @@ public class Driver {
 		
 		driver.doStuff();
 		
-
 	}
 	
+	
 	private int count;
+	
 	public void doStuff() {
+		
+		//counts recurses
 		count = 0;
 		
 		System.out.println("1) Asterisk Pattern");
+		//first parameter will be minimum number of stars
+		//second parameter will be maximum number of stars
 		asteriskPattern(1, 4);
 		
 		System.out.println("2) Converting Integer to String");
+		//convert parameter integer to a string and printing in console
 		integerToString(2986887);
 		
 		
